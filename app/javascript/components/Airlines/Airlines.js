@@ -37,7 +37,7 @@ const Airlines = () =>  {
     axios.get('/api/v1/airlines.json')
     .then(response => {setAirlines(response.data.data) })
     .catch(response => console.log(response))
-  }, [airlines.length]  )
+  }, [airlines.length] )
 
   const grid = airlines.map(item => {
     return (
